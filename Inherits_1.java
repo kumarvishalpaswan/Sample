@@ -1,0 +1,31 @@
+class room{
+	int length;
+	void set_length(int l){
+		this.length=l;
+	}
+	void show_length(){
+		System.out.println("Length ="+length);
+	}
+}
+class my_room extends room{
+	int width;
+	void set_width(int w){
+		width=w;
+	}	
+	void show_width(){
+		System.out.println("width ="+width);
+	}
+	void calc_data(){
+		System.out.println("Area= "+(length*width));
+	}
+}
+class Inherits_1{
+	public static void main(String args[]){
+		my_room r1=new my_room();
+		r1.set_length(5);
+		r1.show_length();
+		r1.set_width(2);
+		r1.show_width();
+		r1.calc_data();	
+	}
+}
